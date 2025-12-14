@@ -12,9 +12,7 @@ FREERTOS_SRC = $(FREERTOS_DIR)/tasks.c \
                $(FREERTOS_DIR)/portable/MemMang/heap_3.c
 
 APP_SRC = src/main.c src/scheduler.c src/tasks.c
-
 OBJ = $(FREERTOS_SRC:.c=.o) $(APP_SRC:.c=.o)
-
 TARGET = freertos_sim
 
 all: $(TARGET)

@@ -8,9 +8,10 @@
 void vSchedulerInit(void);
 void vSystemSimulatorTask(void *pvParameters);
 
-extern QueueHandle_t xRealTimeQueue;
-extern QueueHandle_t xQueue1;
-extern QueueHandle_t xQueue2;
-extern QueueHandle_t xQueue3;
+/* 4 tane kuyruk var. 0 en onemli, 3 en dusuk oncelikli */
+extern QueueHandle_t xRealTimeQueue; 
+extern QueueHandle_t xQueue1;        
+extern QueueHandle_t xQueue2;        
+extern QueueHandle_t xQueue3;        
 
 #endif
